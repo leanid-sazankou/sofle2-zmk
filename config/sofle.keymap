@@ -13,6 +13,12 @@
 #define BASE 0
 #define MAC 1
 #define RAISE 2
+
+// nice_view CS pin is on pro_micro pin 8 on Sofle v2
+&nice_view_spi {
+    cs-gpios = <&pro_micro 8 GPIO_ACTIVE_HIGH>;
+};
+
 / {
 
     keymap {

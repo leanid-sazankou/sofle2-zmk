@@ -59,13 +59,13 @@
 // | BTCLR |  BT1 |  BT2 |  BT3  |  BT4  |  BT5 |                |      |      |  F8   | BASE | MAC | EXTPWR|
 // |  CAPS |  F1  |  F2  |  F3   |  F4   |  F5  |                |  F6  |  F7  |   ^   |  F9  |  F10  |  F11  |
 // |       |   `  |   ~  |   {   |   }   | DEL  |                | PGUP |  <-  |   v   |  ->  |   =   |  F12  |
-// |       |  !   |      |   [   |   ]   |      |      |  |      | PGDN | HOME |       | END  |   =   |       |
+// |       |  !   |      |   [   |   ]   |      |      |  |      | PGDN | HOME |       | END  |   +   |       |
 //                |      |       |       |      |      |  |      |      |      |       |      |
             bindings = <
 &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4  &trans    &trans    &kp F8   &to BASE  &to MAC  &ext_power EP_TOG
 &kp CLCK &kp F1   &kp F2    &kp F3    &kp F4    &kp F5                      &kp F6    &kp F7   &kp UP   &kp F9    &kp F10    &kp F11
 &trans    &kp GRAVE &kp TILDE &kp LBRC  &kp RBRC  &kp DEL                     &kp PG_UP &kp LEFT &kp DOWN &kp RIGHT &kp EQUAL  &kp F12
-&trans    &kp EXCL &trans    &kp LBKT  &kp RBKT  &trans    &trans  &trans    &kp PG_DN &kp HOME &trans   &kp END   &kp EQUAL  &trans
+&trans    &kp EXCL &trans    &kp LBKT  &kp RBKT  &trans    &trans  &trans    &kp PG_DN &kp HOME &trans   &kp END   &kp PLUS   &trans
                    &trans    &trans    &trans    &trans    &trans  &trans    &trans    &trans   &trans   &trans
             >;
 
